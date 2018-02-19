@@ -16,7 +16,8 @@ class PigLatinizer
     end
   end
 
-  def to_pig_latin(sentence)
+  def to_pig_latin
+    sentence=@input
     sentence.split(" ").collect { |word| piglatinize(word) }.join(" ")
   end
 
